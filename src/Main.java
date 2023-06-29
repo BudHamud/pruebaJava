@@ -2,14 +2,18 @@
 
 public class Main {
     public static void main(String[] args) {
-        int pesos = 2000;
+        String[] names = { "Pepe", "Pepa", "Harold" };
 
-        double pesosConIva = calculatorIva(pesos);
-
-        System.out.println(pesosConIva);
+        loopArr(names);
     }
 
-    static double calculatorIva(int pesos) {
+    static double ivaCalculator(int pesos) {
         return pesos * 1.21;
+    }
+
+    static void loopArr(String[] arr) {
+        for ( String name : arr ) {
+            System.out.println(name);
+        }
     }
 }
